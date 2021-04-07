@@ -39,8 +39,9 @@ services:
             - 8081:80
         volumes:
             - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
-            - .:/var/www/
-            - ./public:/var/www/public
+            # - .:/var/www/
+            # - ./public:/var/www/public
+            - .:/var/www/public
         networks:
             - app_network
 

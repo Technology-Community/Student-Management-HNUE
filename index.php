@@ -4,7 +4,7 @@ $title = "Index";
 require_once './layouts/header.php';
 ?>
 
-<div style="">
+<div class="container">
 	<a href="<?= url('home.php') ?>" style="">Home</a>
 </div>
 
