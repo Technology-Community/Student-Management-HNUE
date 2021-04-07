@@ -13,7 +13,7 @@ if (Input::hasPost('login')) {
 
 		if (is_array($data)) {
 			Session::put('auth', $data);
-			Redirect::url('index.php');
+			Redirect::url('home.php');
 		} else {
 			$errorLogin = "Sai tên đăng nhập hoặc mật khẩu";
 		}
@@ -25,11 +25,11 @@ $title = "Login";
 require_once './layouts/header.php';
 ?>
 
-<div id="login" class="">
+<div id="login" class="container">
 	<form class="" method="POST">
 		<h2 class="title">Đăng nhập tài khoản</h2>
 		<?php if (Validator::anyErrors()) : ?>
-			<div class="">
+			<div class="alert">
 				<ul>
 					<?php foreach (Validator::$errors as $err) : ?>
 						<li>
@@ -48,16 +48,16 @@ require_once './layouts/header.php';
 			</div>
 		<?php endif ?>
 		<div class="box">
-			<div class="">
+			<div class="input-form">
 				<label>Username *</label>
 				<input name="username" id="username" type="text" placeholder="Your Username">
 			</div>
-			<div class="">
+			<div class="input-form">
 				<label>Mật khẩu *</label>
 				<input type="password" name="password" id="password" placeholder="********">
 			</div>
 			<div class="">
-				<button class="" type="submit" name="login">Đăng Nhập</button>
+				<button class="btn btn-primary" type="submit" name="login">Đăng Nhập</button>
 			</div>
 		</div>
 	</form>

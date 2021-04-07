@@ -15,4 +15,5 @@ foreach ($loadHelper as $item) {
     require_once "./helper/$item.php";
 }
 
+Session::start();
 $DB = new Database();
