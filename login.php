@@ -20,6 +20,10 @@ if (Input::hasPost('login')) {
 	}
 }
 ?>
+<?php
+$title = "Login";
+require_once './layouts/header.php';
+?>
 
 <div id="login" class="">
 	<form class="" method="POST">
@@ -58,3 +62,4 @@ if (Input::hasPost('login')) {
 		</div>
 	</form>
 </div>
+<? require_once './layouts/footer.php' ?>
