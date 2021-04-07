@@ -1,0 +1,8 @@
+FROM nginx:1.19.7-alpine
+
+WORKDIR /var/www
+# COPY . /var/www
+
+# RUN chown -R www-data:www-data /var/www
+# RUN chmod 777 -R /var/www/storage/logs
+
