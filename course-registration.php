@@ -1,6 +1,6 @@
 <?php require_once './autoload/Autoload.php'; ?>
 <?php
-$title = "Home";
+$title = "Course Registration";
 require_once './layouts/header.php';
 ?>
 

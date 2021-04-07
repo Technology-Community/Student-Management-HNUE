@@ -19,8 +19,17 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="<?= url('home.php') ?>">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="<?= url('profile.php') ?>">Profile </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="<?= url('schedule.php') ?>">Schedule </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="<?= url('course-registration.php') ?>">Schedule </a>
 				</li>
 			</ul>
 		</div>
